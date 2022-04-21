@@ -29,7 +29,7 @@ chmod +x /etc/zabbix/script/*
 ```conf
 #rds
 UserParameter=mysql.discovery,/usr/bin/env python2.7 /etc/zabbix/script/discovery_mysql.py
-UserParameter=check.mysql[*],/usr/bin/env python2.7 /etc/zabbix/script/check_rds.py $1 $2 $3
+UserParameter=check.mysql[*],/usr/bin/env python2.7 /etc/zabbix/script/check_mysql.py $1 $2 $3
 UserParameter=postgre.discovery,/usr/bin/env python2.7 /etc/zabbix/script/discovery_postgre.py
 UserParameter=check.postgre[*],/usr/bin/env python2.7 /etc/zabbix/script/check_postgre.py $1 $2 $3
 ```
