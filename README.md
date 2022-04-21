@@ -1,5 +1,5 @@
 # zabbix-RDS-monitor
-该仓库fork自XWJR-Ops/zabbix-RDS-monitor，但加入了监控RDS-PostgreSQL数据库的支持
+该仓库fork自[XWJR-Ops/zabbix-RDS-monitor](https://github.com/XWJR-Ops/zabbix-RDS-monitor)，但加入了监控RDS-PostgreSQL数据库的支持
    
 zabbix通过阿里云api 自动发现、监控阿里云RDS-Mysql和RDS-PostgreSQL数据库      
 本版本数据的图表展示，是以**监控项进行分组**。
@@ -9,7 +9,7 @@ zabbix通过阿里云api 自动发现、监控阿里云RDS-Mysql和RDS-PostgreSQ
 2. 不要默认别名
 3. 不要使用中文别名（zabbix不识别）
 4. 切记aliyun-python-sdk-core==2.3.5，新版本的sdk有bug
-5. 程序中包含PostgreSQL监控是在数据库使用云盘的情况下，如果你使用本地盘，需要自行修改API参数名，具体参考[性能参数表](https://help.aliyun.com/document_detail/26316.html)
+5. 程序中包含PostgreSQL监控是在数据库使用云盘的情况下，如果你使用本地盘，需要自行修改API参数名，具体参考[阿里云RDS性能参数表](https://help.aliyun.com/document_detail/26316.html)
 ### 环境要求
 python = 2.7
 ### 模块安装
