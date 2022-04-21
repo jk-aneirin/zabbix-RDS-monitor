@@ -1,8 +1,8 @@
 # zabbix-RDS-monitor
-Aliyun RDS-mysql status monitor with zabbix   
+该仓库fork自XWJR-Ops/zabbix-RDS-monitor，但加入了监控RDS-PostgreSQL数据库的支持
    
-zabbix通过阿里云api 自动发现、监控阿里云RDS-Mysql数据库      
-本版本数据的图表展示，是以**监控项进行分组**，后期会再发布**以rds实例分组**的版本。
+zabbix通过阿里云api 自动发现、监控阿里云RDS-Mysql和RDS-PostgreSQL数据库      
+本版本数据的图表展示，是以**监控项进行分组**。
 ## 使用方法
 ### 注意事项
 1. 脚本会收集RDS别名，
@@ -28,8 +28,10 @@ chmod +x /etc/zabbix/script/*
 4. 修改zabbix-agentd.conf，添加以下内容
 ```conf
 #rds
-UserParameter=rds.discovery,/usr/bin/env python2.7 /etc/zabbix/script/discovery_rds.py
-UserParameter=check.rds[*],/usr/bin/env python2.7 /etc/zabbix/script/check_rds.py $1 $2 $3
+UserParameter=mysql.discovery,/usr/bin/env python2.7 /etc/zabbix/script/discovery_mysql.py
+UserParameter=check.mysql[*],/usr/bin/env python2.7 /etc/zabbix/script/check_mysql.py $1 $2 $3
+UserParameter=postgre.discovery,/usr/bin/env python2.7 /etc/zabbix/script/discovery_postgre.py
+UserParameter=check.postgre[*],/usr/bin/env python2.7 /etc/zabbix/script/check_postgre.py $1 $2 $3
 ```
 5. 重启zabbix-agent
 6. zabbix控制台导入模板，并关联主机
