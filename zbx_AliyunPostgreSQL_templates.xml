@@ -10,7 +10,7 @@
     <templates>
         <template>
             <template>RDS-PostgreSQL</template>
-            <name>RDS-PostgreSQL监控模板</name>
+            <name>RDS-PostgreSQL监控模板（只在Zabbix Server添加）</name>
             <description/>
             <groups>
                 <group>
