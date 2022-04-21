@@ -4,17 +4,17 @@
     <date>2017-08-04T08:50:48Z</date>
     <groups>
         <group>
-            <name>模板汇总（201707更新）</name>
+            <name>阿里云RDS监控（201707更新）</name>
         </group>
     </groups>
     <templates>
         <template>
-            <template>RDS</template>
-            <name>RDS监控模板（只在Zabbix Server添加）</name>
+            <template>RDS-MySQL</template>
+            <name>RDS-MySQL监控模板（只在Zabbix Server添加）</name>
             <description/>
             <groups>
                 <group>
-                    <name>模板汇总（201707更新）</name>
+                    <name>阿里云RDS监控（201707更新）</name>
                 </group>
             </groups>
             <applications>

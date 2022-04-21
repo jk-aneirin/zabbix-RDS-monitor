@@ -4,7 +4,7 @@
     <date>2017-08-04T08:50:48Z</date>
     <groups>
         <group>
-            <name>阿里云RDS监控</name>
+            <name>阿里云RDS监控（201707更新）</name>
         </group>
     </groups>
     <templates>
@@ -14,7 +14,7 @@
             <description/>
             <groups>
                 <group>
-                    <name>阿里云RDS监控</name>
+                    <name>阿里云RDS监控（201707更新）</name>
                 </group>
             </groups>
             <applications>
